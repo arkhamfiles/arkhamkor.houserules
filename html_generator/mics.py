@@ -115,6 +115,7 @@ class _Tag:
     id: str
     contents: str
     level: int
+    options: Tuple[str, ...] = field(default=())
     version: Tuple[int, int] = field(init=False, default=(1, 0))
     _expansion: int = field(init=False, default=1001)
     is_number: bool = field(init=False, default=False)
@@ -170,6 +171,7 @@ class _Tag:
         class_str = ' class="{}"'.format(' '.join(classes)) if classes else ''
         result = '<li{}'.format(class_str)
         result += ' value={}'.format(self._value) if self.is_number else ''
+        result += ' class={}'.format(' '.join(self.options)) if self.options else ''
         result += '><a href="#{}"{}>'.format(self.id, class_str)
         result += self.contents
         result += '</a></li>'
@@ -220,9 +222,13 @@ def generate_toc(file: FileType,
         classes: List[str] = [
             x for x in tag.parent['class'] if x not in classes_ignore
         ] if tag.parent.has_attr('class') else []
+        options: List[str] = tag.get('class', default=[])
         if not classes:
             classes.append('core')
-        logger.debug("level: %d, id: %s, string: %s, class: %s", level, curr_id, string, classes)
+        logger.debug(
+            "tag: %s, level: %d, id: %s, string: %s, class: %s, option: %s",
+            tag, level, curr_id, string, classes, options
+        )
         if curr_id in ids:
             continue
         if curr_id[0] == '_':
@@ -230,7 +236,7 @@ def generate_toc(file: FileType,
             continue
         if tags:
             tags[-1].done()
-        tags.append(_Tag(curr_id, string, level))
+        tags.append(_Tag(curr_id, string, level, options))
         tags[-1].update(classes)
 
     header_string = ""
