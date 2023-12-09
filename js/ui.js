@@ -5,7 +5,7 @@ window.onload = function () {
   window.toggleviewOnlyForbidden.innerText = viewOnlyForbidden ? '[제안금기] 금지목록만' : '[제안금기] 전부보기';
 
   window.toggleViewAllTaboo.onclick = function() {
-    toggleViewSelector('.revised, .free, .previous');
+    toggleViewSelector('.revised, .free, .previous, .legacy');
     viewAllTaboo = !viewAllTaboo;
       window.toggleViewAllTaboo.innerText = viewAllTaboo ? '[공식금기] 포함(전부보기)' : '[공식금기] 제외(차이만)';
     localStorage.setItem('viewAllTaboo', viewAllTaboo);
