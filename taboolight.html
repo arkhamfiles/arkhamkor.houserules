@@ -28,8 +28,9 @@
 	  <div class="row">
 
 <div class="col-md-3">
-    <br><br>
+    <p style="text-align:center; font-weight:bold;">현재 보기 모드</p>
     <span class="spanButton" name="toggleViewAllTaboo" id="toggleViewAllTaboo"> </span>
+    <span class="spanButton" name="toggleviewOnlyForbidden" id="toggleviewOnlyForbidden"> </span>
 <h1 id="rop">목차</h1>
 
 <nav class="inner rop">
@@ -54,12 +55,11 @@
 			<ul>
 				<li class=previous><a href="#mutated_01033">밀란 크리스토퍼 박사 (<span title="기본판" class="symbol-core"></span> 33)</a></li>
 				<li class=previous><a href="#mutated_01050">도피 (<span title="기본판" class="symbol-core"></span> 50)</a></li>
-				<li class=previous><a href="#mutated_symbols">의식용 초 (<span title="던위치의 유산" class="symbol-tdl"></span> 29, <span title="재클린 파인" class="symbol-jf"></span> 5), 최면을 거는 시선(0레벨)(<span title="던위치의 유산" class="symbol-tdl"></span> 153, <span title="재클린 파인" class="symbol-jf"></span> 28), 최면을 거는 시선(2레벨)(<span title="재클린 파인" class="symbol-jf"></span> 23), 아우레올로스의 보석(<span title="던위치의 유산" class="symbol-tdl"></span> 269), 라의 목소리(<span title="재클린 파인" class="symbol-jf"></span> 16), 축출(<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 113)</a></li>
-				<li class=revised><a href="#mutated_symbols_">최면을 거는 시선(2레벨)(<span title="재클린 파인" class="symbol-jf"></span> 23)</a></li>
+				<li class=previous><a href="#mutated_symbols">의식용 초 (<span title="던위치의 유산" class="symbol-tdl"></span> 29, <span title="재클린 파인" class="symbol-jf"></span> 5), 최면을 거는 시선(0레벨)(<span title="던위치의 유산" class="symbol-tdl"></span> 153, <span title="재클린 파인" class="symbol-jf"></span> 28), 아우레올로스의 보석(<span title="던위치의 유산" class="symbol-tdl"></span> 269), 라의 목소리(<span title="재클린 파인" class="symbol-jf"></span> 16), 축출(<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 113)</a></li>
 				<li class=previous><a href="#mutated_02011">너무 깊이 파헤치다 (<span title="던위치의 유산" class="symbol-tdl"></span> 111)</a></li>
 				<li class=previous><a href="#mutated_02226">스프링필드 M1903 (<span title="던위치의 유산" class="symbol-tdl"></span> 226)</a></li>
 				<li class=previous><a href="#mutated_02229">신속한 판단 (<span title="던위치의 유산" class="symbol-tdl"></span> 229)</a></li>
-				<li><a href="#mutated_02263">기이한 용액 <span title="던위치의 유산" class="symbol-tdl"></span> 263</a></li>
+				<li class=previous><a href="#mutated_02263">기이한 용액 <span title="던위치의 유산" class="symbol-tdl"></span> 263</a></li>
 				<li class=previous><a href="#mutated_02266">비장의 패 (<span title="던위치의 유산" class="symbol-tdl"></span> 266)</a></li>
 				<li class=previous><a href="#mutated_03029">교묘한 술책 (<span title="카르코사로 가는 길" class="symbol-tpc"></span> 29)</a></li>
 				<li><a href="#mutated_03039">임기응변 (<span title="카르코사로 가는 길" class="symbol-tpc"></span> 39)</a></li>
@@ -71,77 +71,51 @@
 				<li class=previous><a href="#mutated_05020">심문 (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 20)</a></li>
 				<li class=previous><a href="#mutated_scrolls">비밀의 두루마리 (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 166, <span title="끝맺지 못한 의식" class="symbol-tcu"></span> 188, <span title="끝맺지 못한 의식" class="symbol-tcu"></span> 189)</a></li>
 				<li class=previous><a href="#mutated_05153">"떼까마귀" (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 153)</a></li>
-				<li><a href="#mutated_05157">약화 (0/4 레벨) (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 157/321)</a></li>
 				<li class=previous><a href="#mutated_05230">망원 조준경 (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 230)</a></li>
-				<li><a href="#mutated_05276">학구열 (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 276)</a></li>
 				<li class=previous><a href="#mutated_05324">전화위복 (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 324 / <span title="기본판" class="symbol-core"></span> 192)</a></li>
-				<li><a href="#mutated_06022">여왕의 펜던트 (<span title="꿈을 먹는 자" class="symbol-tde"></span> 22)</a></li>
-				<li><a href="#mutated_06110">첫 불침번 (<span title="꿈을 먹는 자" class="symbol-tde"></span> 110)</a></li>
+				<li><a href="#mutated_06022">여왕의 펜던트 (<span title="꿈을 먹는 자" class="symbol-tde"></span> 22), 무단 침입(0/2 레벨) (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 114, <span title="진홍색 열쇠" class="symbol-tskp"></span> 74)</a></li>
 				<li class=previous><a href="#mutated_06195">35구경 윈체스터 (<span title="꿈을 먹는 자" class="symbol-tde"></span> 195)</a></li>
 				<li><a href="#mutated_06197">연습이 완벽을 만든다 (<span title="꿈을 먹는 자" class="symbol-tde"></span> 197)</a></li>
 				<li class=previous><a href="#mutated_06199">에이스 트리플 (<span title="꿈을 먹는 자" class="symbol-tde"></span> 199)</a></li>
-				<li><a href="#mutated_60330">모사 (<span title="위니프리드 해버먹" class="symbol-wh"></span> 30)</a></li>
-				<li><a href="#mutated_07114">무단 침입(0/2 레벨) (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 114, <span title="진홍색 열쇠" class="symbol-tskp"></span> 74)</a></li>
 				<li class=previous><a href="#mutated_07122">고대의 성약 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 122)</a></li>
 				<li class=previous><a href="#mutated_07268">이계 신의 피리 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 268)</a></li>
 				<li class=previous><a href="#mutated_07301">신성화 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 301)</a></li>
-				<li><a href="#mutated_07304">아리아드네의 실타래 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 304)</a></li>
+				<li class=legacy><a href="#mutated_08019">완전무장 (<span title="지구의 끝자락" class="symbol-eoep"></span> 19)</a></li>
 				<li class=previous><a href="#mutated_08032">제레마이어 커비 (<span title="지구의 끝자락" class="symbol-eoep"></span> 32)</a></li>
 				<li class=previous><a href="#mutated_08045">프로페시아 프로파나 (<span title="지구의 끝자락" class="symbol-eoep"></span> 45)</a></li>
 				<li class=previous><a href="#mutated_08055">암시장 (<span title="지구의 끝자락" class="symbol-eoep"></span> 55)</a></li>
 				<li class=previous><a href="#mutated_08076">열람 후 소각하시오 (<span title="지구의 끝자락" class="symbol-eoep"></span> 76)</a></li>
 				<li class=previous><a href="#mutated_08098">억겁의 지도 (<span title="지구의 끝자락" class="symbol-eoep"></span> 98, <span title="지구의 끝자락" class="symbol-eoep"></span> 100)</a></li>
-				<li><a href="#mutated_08187">거석 망치 (<span title="지구의 끝자락" class="symbol-eoep"></span> 187)</a></li>
-				<li><a href="#mutated_09039">만사에 대비하라 (4레벨) (<span title="진홍색 열쇠" class="symbol-tskp"></span> 39)</a></li>
+				<li class=previous><a href="#mutated_08187">거석 망치 (<span title="지구의 끝자락" class="symbol-eoep"></span> 187)</a></li>
 				<li><a href="#mutated_09041">실험적 가설/Empirical Hypothesis (<span title="진홍색 열쇠" class="symbol-tskp"></span> 41)</a></li>
-				<li><a href="#mutated_09045">연구 일지/Research Notes (<span title="진홍색 열쇠" class="symbol-tskp"></span> 45)</a></li>
 				<li><a href="#mutated_09060">암흑가의 연줄/Friends in Low Places (<span title="진홍색 열쇠" class="symbol-tskp"></span> 60)</a></li>
+				<li class=legacy><a href="#mutated_09081">지배의 언령 (<span title="진홍색 열쇠" class="symbol-tskp"></span> 81)</a></li>
+			</ul>
+			<li><a href="#mutated_optional">변형 (선택)</a></li>
+			<ul>
+				<li><a href="#mutated_symbols_rev">최면을 거는 시선(2레벨)(<span title="재클린 파인" class="symbol-jf"></span> 23)</a></li>
+				<li><a href="#mutated_05157">약화 (0/4 레벨) (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 157/321)</a></li>
 				<li><a href="#mutated_09078">말끔한 잠입/Clean Sneak (<span title="진홍색 열쇠" class="symbol-tskp"></span> 78)</a></li>
-				<li><a href="#mutated_09078">월광 의식 (2레벨) (<span title="진홍색 열쇠" class="symbol-tskp"></span> 93)</a></li>
+				<li><a href="#mutated_09045">연구 일지/Research Notes (<span title="진홍색 열쇠" class="symbol-tskp"></span> 45)</a></li>
 			</ul>
 		</ul>
 		<li><a href="#investigator">조사자 카드</a></li>
 		<ul>
-			<li><a href="#Wendy_Adams">웬디 아담스</a></li>
-			<ul>
-				<li><a href="#Wendy_Adams_SignatureA">웬디의 부적 (강화된) (<span title="평행 조사자" class="symbol-par"></span> 39)</a></li>
-			</ul>
-			<li class=previous><a href="#Rex_Murphy">렉스 머피</a></li>
+			<li class=previous><a href="#Rex_Murphy">렉스 머피 - 기능</a></li>
 			<ul>
 				<li class=previous><a href="#Rex_Murphy_Front">조사자 카드: 앞면</a></li>
 			</ul>
-			<li><a href="#Jim_Culver">짐 컬버</a></li>
-			<ul>
-				<li><a href="#Jim_Culver_Front">조사자 카드: 앞면</a></li>
-			</ul>
-			<li class=previous><a href="#Lola_Hayes">롤라 헤이즈</a></li>
-			<ul>
-				<li class=previous><a href="#Lola_Hayes_Front">조사자 카드: 앞면</a></li>
-				<li class=previous><a href="#Lola_Hayes_Weakness">정체성의 위기 (<span title="카르코사로 가는 길" class="symbol-tpc"></span> 19)</a></li>
-			</ul>
-			<li><a href="#Finn_Edwards">핀 에드워즈</a></li>
-			<ul>
-				<li><a href="#Finn_Edwards_Weakness">현행범으로 붙잡히다 (<span title="잊힌 시대" class="symbol-tfa"></span> 12)</a></li>
-			</ul>
-			<li><a href="#Mendy_Thompson">맨디 톰슨</a></li>
+			<li class=previous><a href="#Lola_Hayes">롤라 헤이즈 - 기능 및 전용약점</a></li>
+			<li><a href="#Amanda_Sharpe">어맨다 샤프 - 전용약점</a></li>
+			<li class=previous><a href="#Trish_Scarborough">트리시 스카보로 - 기능</a></li>
+		</ul>
+		<li><a href="#investigator_optional">조사자 카드 (선택)</a></li>
+		<ul>
+			<li><a href="#Jim_Culver">짐 컬버 - 기능</a></li>
+			<li><a href="#Finn_Edwards">핀 에드워즈 - 전용약점</a></li>
+			<li><a href="#Mendy_Thompson">맨디 톰슨 - 덱 구성 조건</a></li>
 			<ul>
 				<li><a href="#Mendy_Thompson_back">조사자 카드: 뒷면</a></li>
-			</ul>
-			<li><a href="#Amanda_Sharpe">어맨다 샤프</a></li>
-			<ul>
-				<li><a href="#Amanda_Sharpe_weakness">심해로부터의 속삭임 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 9)</a></li>
-			</ul>
-			<li class=previous><a href="#Trish_Scarborough">트리시 스카보로</a></li>
-			<ul>
-				<li class=previous><a href="#Trish_Scarborough_Front">조사자 카드: 앞면</a></li>
-			</ul>
-			<li><a href="#Kymani_Jones">카이마니 존스</a></li>
-			<ul>
-				<li><a href="#Kymani_Jones_back">조사자 카드: 뒷면</a></li>
-			</ul>
-			<li><a href="#Gloria_GoldBerg">글로리아 골드버그</a></li>
-			<ul>
-				<li><a href="#Gloria_GoldBerg_front">조사자 카드: 앞면</a></li>
 			</ul>
 		</ul>
 		<li><a href="#weakness">기본 약점</a></li>
@@ -155,19 +129,34 @@
 
 <div class="errata rules-reference" style="text-align: justify">
 
-<h1>금기 하우스룰 - 기본 버전</h1>
-<p style="font-size:large;font-weight:bold">참고: 본 금기 하우스룰은 베타 버전입니다. 주기적으로 변경될 수 있습니다.</p>
+<h1>금기 하우스룰 - beta V2</h1>
+<p style="font-size:large;font-weight:bold">(V2 - 2023-12-10) 참고: 본 금기 하우스룰은 베타 버전입니다. 주기적으로 변경될 수 있습니다.</p>
 <p>베타 수정 내역 (단순 오류 수정은 포함되지 않습니다):</p>
 <ol>
-    <li>2023-09-24: 초기 버전 배포</li>
+    <li>2023-09-24: <b>버전 1</b> 배포 - 초기 버전</li>
     <li>2023-10-03: 최후통첩: 고삐 풀린 신화 항목에 승점 더미 추가 불가 추가</li>
+    <li>2023-11-22: Ectoplasmic Horror (<span title="진홍색 열쇠" class="symbol-tskp"></span>) 기본약점 금지 목록에서 제거</li>
+    <li>2023-12-10: <b>버전 2</b> 배포 - 목록이 과도하다는 의견을 반영하여, 변형을 최소화하고 버프/너프를 구분하여 선택 규칙으로 적용하기 쉽도록 구분하였습니다. 상세 내역은 아래를 참고해주세요.</li>
+    <ul>
+        <li>변형 목록에서 제거: 학구열, 모사, 월광 의식(2), 만사를 대비하라(4)</li>
+        <li>변형 &#8594; 금지: 첫 불침번, 아리아드네의 실타래</li>
+        <li>가시성 향상 - 버프 및 너프 형태의 변경 나누어 제시, 기존 금기 변형 카드 중 추가 속박/강화 카드 변형 목록 미제시, 실질적 금지 카드들 금지 리스트로 이동</li>
+        <li>금지 목록만 별개의 항목으로 제시</li>
+    </ul>
 </ol>
 <br />
 
 <p>본 추가 금기 하우스룰은 저희가 자체적으로 제시하는 하우스룰으로, 현 금기 목록과 유사한 형식으로 만들어 본 하우스룰 형태의 금기 목록입니다. 현재의 금기 목록을 많이 즐겨 지루하신 분들을 위해 제작 되었으며, 공식 자료가 아니라는 점을 참고해 주시길 바랍니다.</p>
-<p>본 금기 목록은 큰 변동은 원하지 않는 분들을 위한 금기 목록입니다. 본 금기 목록에서는 최소한의 변동만을 주기 위해 노력하였습니다.</p>
-<p>하우스 금기 목록은 저작권의 문제로 파일로 배포하지는 못합니다. 그러한 이유로 본 금기 목록은 "덱구성 조건 변경"에 초점을 맞추어 보았습니다.</p>
+<p>본 금기 목록은 큰 변동은 원하지 않는 분들을 위한 금기 목록입니다. 본 금기 목록에서는 최소한의 변동만을 주기 위해 노력하였습니다. 다만, 본 금기 하우스룰은 저작권의 문제로 파일로 배포하지는 못합니다. 그러한 이유로 본 금기 목록은 "덱구성 조건 변경"에 초점을 맞추어 보았습니다.</p>
 <p style="font-weight:bold">본 금기 하우스룰은 공식 금기 버전6에 기반합니다.</p>
+<p>Disclaimer: 본 사이트는 코리아보드게임즈와 직접적인 연관이 있지 않습니다. 아컴호러 카드게임은 FFG 및 코리아보드게임즈가 가지고 있으며, 커뮤니티 활동을 위해 비상업적으로 일부 활용하고 있습니다. 저작권자의 요청이 있는 경우, 언제든지 본 페이지 혹은 일부 텍스트는 삭제될 수 있습니다.</p>
+<p>본 금기 하우스룰은 단순 제안일 뿐이며, 아무런 강제 사항이 없다는 것을 참고해주십시오. 적용에 앞서 테이블 단위에서 논의하시어 원하는 방법으로 진행해보시길 바랍니다. 아래는 제안 드리는 금기 목록을 활용하시는 방법을 나열해 보았습니다.</p>
+<ul>
+    <li>기본적으로, 본 금기목록을 전부 적용하시거나 선택 변형 및 강화를 제외한 모든 규칙을 적용하는 것을 제안드립니다. 다만, 이는 <b>아컴호러: 카드게임에 충분히 숙련된 플레이어에 한하며,</b> 그렇지 않은 분들은 공식 금기를 활용하시거나 금기 목록을 적용하지 않는 것을 권장 드립니다.</li>
+    <li>변형 카드를 적용하기 부담되시는 경우, <b>제안드리는 변형 금기는 적용하지 아니하고</b> 최후통첩, 속박/강화, 금지, 기본 약점 추가 규칙 정도만 적용하시는 것도 좋습니다.</li>
+    <li>기존 덱빌더를 온전히 활용하시고자 하는 경우, <b>변형/속박/강화 금기는 적용하지 아니하고</b> 최후통첩, 기본 약점 추가 규칙 및 금지 카드만 적용하셔도 좋습니다.</li>
+    <li>원하신다면 제안드리는 버프 금기만 적용하셔도 됩니다. 다만, 버프 금기는 현 시점에서 실험적인 부분이며, 제안드리는 금기 목록을 고려하여 작성된 것이라는 것을 참고부탁드립니다.</li>
+</ul>
 
 <h2 id="ultimatums">최후통첩</h2>
 <p>본 금기 하우스룰은 추가적인 최후통첩을 제시합니다. 최후통첩에 대한 자세한 설명은 <a href="https://arkhamfiles.github.io/ultimatums.html">여기(아컴호러 카드게임 허브)</a>를 참고해주세요. 본 금기 하우스룰을 적용하는 경우에, 본 최후통첩은 반드시 적용해야 합니다.</p>
@@ -196,34 +185,38 @@
 
 <h2 id="player_cards">플레이어 카드</h2>
 
-<div class="revised">
+<div class="free">
 <h3 id="free">해방</h3>
 <p>해방 범주의 카드는 아무 변동이 없습니다. 인쇄된 카드와 동일한 레벨, 구입 경험치, 효과 등을 가집니다. <b>(즉, 공식 금기 변화는 적용하지 아니합니다.)</b></p>
 <ul>
     <li>화염 방사기(<span title="잊힌 시대" class="symbol-tfa"></span> 305)</li>
-    <li>네크로노미콘: 페트루스 데 다키아 번역본 (<span title="하비 월터스" class="symbol-hw"></span> 33)</li>
+    <li>네크로노미콘: <i>페트루스 데 다키아 번역본</i> (<span title="하비 월터스" class="symbol-hw"></span> 33)</li>
     <li>완전무장(<span title="지구의 끝자락" class="symbol-eoep"></span> 19)</li>
     <li>룬 새김 도끼/Runic Axe (<span title="진홍색 열쇠" class="symbol-tskp"></span> 22)</li>
     <li>지배의 언령/Power Word (<span title="진홍색 열쇠" class="symbol-tskp"></span> 81)</li>
 </ul>
 </div>
 
+<div class="chained">
 <h3 id="chained">속박</h3>
 <p>속박 범주의 카드는 아래와 같이 경험치 비용이 증가합니다. 카드의 레벨은 동일하고 카드를 구입할 때 필요한 경험치만 증가한다는 사실을 주의하세요. 이 추가 경험치 비용은 해당 카드를 구입할 때 뿐만이 아니라 해당 목록의 카드로 향상 하거나, 아니면 해당 목록의 향상 카드에서 다른 카드로 향상 할 때에도 고려해야 합니다.</p>
 <ul>
     <li class="previous">길잡이 (<span title="던위치의 유산" class="symbol-tdl"></span> 108): +1 경험치</li>
+    <li class="legacy">화염 방사기(<span title="잊힌 시대" class="symbol-tfa"></span> 305): +1 경험치</li>
     <li>유비무환 (<span title="카르코사로 가는 길" class="symbol-tpc"></span> 150): +1 경험치</li>
     <li>육상 운동화 (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 36): +1 경험치</li>
     <li class="previous">지식은 힘이다 (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 231): +2 경험치</li>
+    <li class="legacy">네크로노미콘: <i>페트루스 데 다키아 번역본</i> (<span title="하비 월터스" class="symbol-hw"></span> 33): +3 경험치</li>
     <li>끈기 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 196): +1 경험치</li>
     <li>유물 발굴(2레벨) (<span title="지구의 끝자락" class="symbol-eoep"></span> 39): +1 경험치</li>
     <li>거석 망치(<span title="지구의 끝자락" class="symbol-eoep"></span> 93): +1 경험치 (참고: 기존 변형은 여전히 적용됩니다.)</li>
     <li class="previous">제네 보르가르 (<span title="지구의 끝자락" class="symbol-eoep"></span> 99): +2 경험치</li>
-    <li class="previous">실마리를 비춰라 (<span title="진홍색 열쇠" class="symbol-tskp"></span> 108): +2 경험치</li>
+    <li class="legacy">룬 새김 도끼/Runic Axe (<span title="진홍색 열쇠" class="symbol-tskp"></span> 22) 향상 요소 - 사냥의 룬 글귀: +1 경험치</li>
     <li>경비견(2레벨) (<span title="진홍색 열쇠" class="symbol-tskp"></span> 34): +1 경험치</li>
     <li>불가사의한 이론/Orphic Theory (<span title="진홍색 열쇠" class="symbol-tskp"></span> 51): +2 경험치</li>
     <li>결박의 단지/Binder's Jar (<span title="진홍색 열쇠" class="symbol-tskp"></span> 89): +1 경험치</li>
     <li>무시무시한 빙의/Ghastly Possession (<span title="진홍색 열쇠" class="symbol-tskp"></span> 90): +1 경험치</li>
+    <li class="previous">실마리를 비춰라 (<span title="진홍색 열쇠" class="symbol-tskp"></span> 108): +2 경험치</li>
 </ul>
 
 <h3 id="unchained">강화</h3>
@@ -239,7 +232,9 @@
     <li>성스러운 창(<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 302): -1 경험치</li>
     <li class="previous">균형 의식 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 308): -2 경험치</li>
 </ul>
+</div>
 
+<div class="forbidden">
 <h3 id="forbidden">금지</h3>
 <p>이 범주의 카드는 덱에 넣을 수 없습니다.</p>
 <ul>
@@ -254,13 +249,21 @@
     <li>고대 석판: 고대 문명의 지식 (<span title="잊힌 시대" class="symbol-tfa"></span> 230)</li>
     <li>아슬아슬한 줄타기 (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 159)</li>
     <li>저돌적(레벨 0) (<span title="위니프리드 해버먹" class="symbol-wh"></span> 18)</li>
+    <li>첫 불침번 (<span title="꿈을 먹는 자" class="symbol-tde"></span> 110)</li>
     <li>꿈 향상 영액 (<span title="꿈을 먹는 자" class="symbol-tde"></span> 159)</li>
     <li>불안한 평화 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 269)</li>
+    <li>아리아드네의 실타래 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 304)</li>
     <li>급조 함정/Makeshift Trap (<span title="진홍색 열쇠" class="symbol-tskp"></span> 100) - 그물/Net 향상 요소</li>
+    <li>웬디의 부적 <i>(강화된.)</i> (<span title="평행 조사자" class="symbol-par"></span> 39)</li>
+    <li>카이마니 존스 - '<b>덱 구성 제한:</b> 잠행(레벨 3) (<span title="돌아온 카르코사로 가는 길" class="symbol-rtpc"></span> 5)은 사용할 수 없습니다.'</li>
+    <li>글로리아 골드버그</li>
 </ul>
+</div>
 
+<div class="mutated">
 <h3 id="mutated">변형</h3>
 <p>변형 범주의 카드는 아래와 같이 문구가 추가되거나 바뀝니다.</p>
+
 <h4 id="mutated_01033" class="previous">밀란 크리스토퍼 박사 (<span title="기본판" class="symbol-core"></span> 33)</h4>
 <table class="previous"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
@@ -281,9 +284,8 @@
     </td></tr>
 </tbody></table>
 
-<h4 id="mutated_symbols" class="previous">의식용 초 (<span title="던위치의 유산" class="symbol-tdl"></span> 29, <span title="재클린 파인" class="symbol-jf"></span> 5), 최면을 거는 시선(0레벨)(<span title="던위치의 유산" class="symbol-tdl"></span> 153, <span title="재클린 파인" class="symbol-jf"></span> 28), 최면을 거는 시선(2레벨)(<span title="재클린 파인" class="symbol-jf"></span> 23), 아우레올로스의 보석(<span title="던위치의 유산" class="symbol-tdl"></span> 269), 라의 목소리(<span title="재클린 파인" class="symbol-jf"></span> 16), 축출(<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 113)</h4>
-<h4 id="mutated_symbols_" class="revised">최면을 거는 시선(2레벨)(<span title="재클린 파인" class="symbol-jf"></span> 23)</h4>
-<table><tbody>
+<h4 id="mutated_symbols" class="previous">의식용 초 (<span title="던위치의 유산" class="symbol-tdl"></span> 29, <span title="재클린 파인" class="symbol-jf"></span> 5), 최면을 거는 시선(0레벨)(<span title="던위치의 유산" class="symbol-tdl"></span> 153, <span title="재클린 파인" class="symbol-jf"></span> 28), 아우레올로스의 보석(<span title="던위치의 유산" class="symbol-tdl"></span> 269), 라의 목소리(<span title="재클린 파인" class="symbol-jf"></span> 16), 축출(<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 113)</h4>
+<table class="previous"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
     <tr><td>
         ... <span><span title="해골" class="icon-skull"></span>, <span title="추종자" class="icon-cultist"></span>, <span title="석판" class="icon-tablet"></span>, <span title="옛것" class="icon-elder_thing"></span>, <span title="자동 실패" class="icon-auto_fail"></span> 기호</span> ... <br />
@@ -324,8 +326,8 @@
     </td></tr>
 </tbody></table>
 
-<h4 id="mutated_02263">기이한 용액(<i>산성 수액</i>) (<span title="던위치의 유산" class="symbol-tdl"></span> 263)</h4>
-<table><tbody>
+<h4 id="mutated_02263" class="previous">기이한 용액(<i>산성 수액</i>) (<span title="던위치의 유산" class="symbol-tdl"></span> 263)</h4>
+<table class="previous"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
     <tr><td>
     </td><td>
@@ -449,16 +451,6 @@
     </td></tr>
 </tbody></table>
 
-<h4 id="mutated_05157">약화 (0/4 레벨) (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 157/321)</h4>
-<table><tbody>
-    <tr><th>기존 문구</th><th>변경 문구</th></tr>
-    <tr><td>
-        공격받은 적은 <span>이번 차례가 끝날 때까지</span> (–1 전투값과 –1 회피값/-1 전투값, -1 체력, -1 회피값)을 얻습니다.
-    </td><td>
-        공격받은 적은 <span>이번 라운드가 끝날 때 까지</span> (–1 전투값과 –1 회피값/-1 전투값, -1 체력, -1 회피값)을 얻습니다.
-    </td></tr>
-</tbody></table>
-
 <h4 id="mutated_05230" class="previous">망원 조준경 (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 230)</h4>
 <table class="previous"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
@@ -469,14 +461,6 @@
     </td></tr>
 </tbody></table>
 
-<h4 id="mutated_05276">학구열 (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 276)</h4>
-<table><tbody>
-    <tr><th>기존 문구</th><th>변경 문구</th></tr>
-    <tr><td>
-    </td><td>
-        <span>덱 당 1장 한정.</span>
-    </td></tr>
-</tbody></table>
 
 <h4 id="mutated_05324" class="previous">전화위복 (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 324 / <span title="기본판" class="symbol-core"></span> 192)</h4>
 <table class="previous"><tbody>
@@ -488,8 +472,19 @@
     </td></tr>
 </tbody></table>
 
-<h4 id="mutated_06022">여왕의 펜던트 (<span title="꿈을 먹는 자" class="symbol-tde"></span> 22)</h4>
-<table><tbody>
+<h4 id="mutated_06022">여왕의 펜던트 (<span title="꿈을 먹는 자" class="symbol-tde"></span> 22), 무단 침입(0/2 레벨) (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 114, <span title="진홍색 열쇠" class="symbol-tskp"></span> 74)</h4>
+<table class="revised"><tbody>
+    <tr><th>기존 문구</th><th>변경 문구</th></tr>
+    <tr><td>
+        ... 장소에 있는 적 하나를 자동 회피(해도 됩니다/합니다).
+    </td><td>
+        .. 장소에 있는 <span><span class="trait">정예</span>가 아닌</span> 적 하나를 자동 회피(해도 됩니다/합니다).
+    </td></tr>
+</tbody></table>
+<p class="revised">알아두기: 여왕의 펜던트의 기존 변형 금기는 그대로 적용됩니다.</p>
+
+<h5 class="previous">여왕의 펜던트 (<span title="꿈을 먹는 자" class="symbol-tde"></span> 22)</h5>
+<table class="previous"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
     <tr><td>
         '여왕의 펜던트'에 충전이 없다면, <span>이 카드를 비플레이 상태로 치워 두고, 치워 두었던 '오닉스 조각' 사본 3장을 당신의 덱에 섞어넣습니다.</span>
@@ -503,13 +498,13 @@
     </td></tr>
 </tbody></table>
 
-<h4 id="mutated_06110">첫 불침번 (<span title="꿈을 먹는 자" class="symbol-tde"></span> 110)</h4>
-<table><tbody>
+<h5 class="previous">무단 침입(0/2 레벨) (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 114, <span title="진홍색 열쇠" class="symbol-tskp"></span> 74)</h5>
+<table class="previous"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
     <tr><td>
-        ... 분배된 카드를 뽑습니다.
+        난이도를 넘어선 차이 2(1) 이상으로 성공하면, 당신은 이 장소에 있는 적 하나를 자동 회피해도 됩니다.
     </td><td>
-        ... 분배된 카드를 뽑습니다. <span>(게임당 최대 2번.)</span>
+        난이도를 넘어선 차이 2(1) 이상으로 성공하면, 당신은 이 장소에 있는 <span><span class="trait">정예</span>가 아닌</span> 적 하나를 자동 회피해도 됩니다.
     </td></tr>
 </tbody></table>
 
@@ -543,26 +538,6 @@
     </td></tr>
 </tbody></table>
 
-<h4 id="mutated_60330">모사 (<span title="위니프리드 해버먹" class="symbol-wh"></span> 30)</h4>
-<table><tbody>
-    <tr><th>기존 문구</th><th>변경 문구</th></tr>
-    <tr><td>
-        당신이 ‘모사’를 능력 테스트에 소모한 후, 다른 조사자의 버린 카드 더미에서 이번 테스트에 소모할 수 있는 능력 카드 하나를 찾아서 그 카드를 소모합니다.
-    </td><td>
-        당신이 ‘모사’를 능력 테스트에 소모한 후, 다른 조사자의 버린 카드 더미에서 이번 테스트에 소모할 수 있는 <span>명칭이 '모사'가 아닌</span> 능력 카드 하나를 찾아서 그 카드를 소모합니다.
-    </td></tr>
-</tbody></table>
-
-<h4 id="mutated_07114">무단 침입(0/2 레벨) (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 114, <span title="진홍색 열쇠" class="symbol-tskp"></span> 74)</h4>
-<table><tbody>
-    <tr><th>기존 문구</th><th>변경 문구</th></tr>
-    <tr><td>
-        난이도를 넘어선 차이 2(1) 이상으로 성공하면, 당신은 이 장소에 있는 적 하나를 자동 회피해도 됩니다.
-    </td><td>
-        난이도를 넘어선 차이 2(1) 이상으로 성공하면, 당신은 이 장소에 있는 <span><span class="trait">정예</span>가 아닌</span> 적 하나를 자동 회피해도 됩니다.
-    </td></tr>
-</tbody></table>
-
 <h4 id="mutated_07122" class="previous">고대의 성약 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 122)</h4>
 <table class="previous"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
@@ -593,13 +568,13 @@
     </td></tr>
 </tbody></table>
 
-<h4 id="mutated_07304">아리아드네의 실타래 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 304)</h4>
-<table><tbody>
+<h4 id="mutated_08019" class="legacy">완전무장 (<span title="지구의 끝자락" class="symbol-eoep"></span> 19)</h4>
+<table class="legacy"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
     <tr><td>
-        <span title="자유 격발" class="icon-free"></span> ‘아리아드네의 실타래’를 소진합니다: 당신이 조종하는 자산 하나에게서 당신의 자원 저장소로(혹은 반대로) 비밀 1개를 이동시킵니다(해당 비밀은 자원이 됩니다).
+        <b>강제</b> - 게임에서 당신의 첫 번째 차례를 시작할 때: 당신의 손에서 <span class="trait">물품</span> 자산을 (한 번에 1장씩) <span>원하는 만큼</span> 플레이합니다.
     </td><td>
-        <span title="자유 격발" class="icon-free"></span> ‘아리아드네의 실타래’를 소진합니다: 당신이 조종하는 자산 하나에게서 당신의 자원 저장소로(혹은 반대로) 비밀 1개를 이동시킵니다(해당 비밀은 자원이 됩니다). <span>반대로 이동시키기 위한 추가 비용으로, 당신은 자원을 1개 (<i>추가로</i>) 소비해야 합니다.</span>
+        <b>강제</b> - 게임에서 당신의 첫 번째 차례를 시작할 때: 당신의 손에서 <span class="trait">물품</span> 자산을 (한 번에 1장씩) <span>최대 5장까지</span> 플레이합니다.
     </td></tr>
 </tbody></table>
 
@@ -653,8 +628,8 @@
     </td></tr>
 </tbody></table>
 
-<h4 id="mutated_08187">거석 망치 (<span title="지구의 끝자락" class="symbol-eoep"></span> 187)</h4>
-<table><tbody>
+<h4 id="mutated_08187" class="previous">거석 망치 (<span title="지구의 끝자락" class="symbol-eoep"></span> 187)</h4>
+<table class="previous"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
     <tr><td></td><td>
         <span>속박(+1 경험치).</span>
@@ -663,16 +638,6 @@
         난이도를 넘어선 차이 3 이상으로 성공했다면, 그 대신 +2 피해를 주고 그 적을 당신으로부터 최대 2칸까지 멀리 이동<span>시켜도 됩니다</span>(마찬가지로 이동은 <span class="trait">정예</span>가 아닌 적에 한하여)
     </td><td>
         난이도를 넘어선 차이 3 이상으로 성공했다면, 그 대신 “+2 피해를 주고 그 적을 당신으로부터 최대 2칸까지 멀리 이동”<span>시키기 위해 당신은 '거석 망치'를 소진해도 됩니다</span>(마찬가지로 이동은 <span class="trait">정예</span>가 아닌 적에 한하여)
-    </td></tr>
-</tbody></table>
-
-<h4 id="mutated_09039">만사에 대비하라 (4레벨) (<span title="진홍색 열쇠" class="symbol-tskp"></span> 39)</h4>
-<table><tbody>
-    <tr><th>기존 문구</th><th>변경 문구</th></tr>
-    <tr><td>
-        ... 1씩 줄어듭니다.
-    </td><td>        
-        ... 1씩 줄어듭니다. <span>'만사에 대비하라'를 게임에서 제거합니다.</span>
     </td></tr>
 </tbody></table>
 
@@ -686,16 +651,6 @@
     </td></tr>
 </tbody></table>
 
-<h4 id="mutated_09045">연구 일지/Research Notes (<span title="진홍색 열쇠" class="symbol-tskp"></span> 45)</h4>
-<table><tbody>
-    <tr><th>기존 문구</th><th>변경 문구</th></tr>
-    <tr><td>
-        <span title="행동 격발" class="icon-action"></span>: ...
-    </td><td>
-        <span title="행동 격발" class="icon-action"></span>: ... <span>(격발마다 증거는 최대 3개까지 소비 가능).</span>
-    </td></tr>
-</tbody></table>
-
 <h4 id="mutated_09060">암흑가의 연줄/Friends in Low Places (<span title="진홍색 열쇠" class="symbol-tskp"></span> 60)</h4>
 <table><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
@@ -703,6 +658,49 @@
         ... 자원을 1개 소비해서 그 카드를 당신에 손에 들어도 됩니다.
     </td><td>
         ... 자원을 1개 소비해서 그 카드를 당신에 손에 들어도 됩니다 <span>(최대 3자원 소비 가능).</span>
+    </td></tr>
+</tbody></table>
+
+<h4 id="mutated_09081" class="legacy">지배의 언령 (<span title="진홍색 열쇠" class="symbol-tskp"></span> 81)</h4>
+<table class="legacy"><tbody>
+    <tr><th>기존 문구</th><th>변경 문구</th></tr>
+    <tr><td>
+        <span title="행동 격발" class="icon-action"></span> 부착된 적이 당신이 위치한 장소에 있다면: <b>협상.</b> 그 적에게 명령을 내립니다(각각의 명령마다 라운드당 1번 한정) – <br /> – <i>“가라.”</i> 이 적은 당신이 선택한 방향으로 1칸 이동합니다. <br /> <span>– <i>“두려워하라.”</i> 이 적은 소진됩니다.</span>
+    </td><td>
+        <span title="행동 격발" class="icon-action"></span> 부착된 적이 당신이 위치한 장소에 있다면: <b>협상.</b> <span><span title="의지" class="icon-willpower"></span> (3)를 테스트합니다. 성공하면,</span> 그 적에게 명령을 내립니다(각각의 명령마다 라운드당 1번 한정) – <br /> – <i>“가라.”</i> 이 적은 당신이 선택한 방향으로 1칸 이동합니다.
+    </td></tr>
+    <tr><td>
+        ☐ <span><b>자비를 배풀어라.</b> 이 명령을 추가합니다. – <i>“자비를 배풀어라.”</i> ..."</span>
+    </td><td>
+        ☐ <span><b>두려워하라.</b> 이 명령을 추가합니다. – <i>“두려워하라.”</i> 이 적은 소진됩니다.</span>
+    </td></tr>
+</tbody></table>
+
+</div>
+
+<div class="mutated_optional">
+<h3 id="mutated_optional">변형 (선택)</h3>
+<p>변형 범주의 카드는 아래와 같이 문구가 추가되거나 바뀝니다. 단, 본 범주에 있는 카드는 카드의 버프를 주는 것으로, 원한다면 적용하지 않고 기존 문구를 그대로 사용하여도 됩니다.</p>
+
+<h4 id="mutated_symbols_rev">최면을 거는 시선(2레벨)(<span title="재클린 파인" class="symbol-jf"></span> 23)</h4>
+<table><tbody>
+    <tr><th>기존 문구</th><th>변경 문구</th></tr>
+    <tr><td>
+        ... <span><span title="해골" class="icon-skull"></span>, <span title="추종자" class="icon-cultist"></span>, <span title="석판" class="icon-tablet"></span>, <span title="옛것" class="icon-elder_thing"></span>, <span title="자동 실패" class="icon-auto_fail"></span> 기호</span> ... <br />
+        <small>(참고: 기존 문구의 일부 카드에는 일부 기호가 없을 수도 있습니다.)</small>
+    </td><td>
+        ... <span>기호</span> ...
+        <br />참고: 기존 금기의 최면을 거는 시선(0레벨)과 동일한 변경입니다.
+    </td></tr>
+</tbody></table>
+
+<h4 id="mutated_05157">약화 (0/4 레벨) (<span title="끝맺지 못한 의식" class="symbol-tcu"></span> 157/321)</h4>
+<table><tbody>
+    <tr><th>기존 문구</th><th>변경 문구</th></tr>
+    <tr><td>
+        공격받은 적은 <span>이번 차례가 끝날 때까지</span> (–1 전투값과 –1 회피값/-1 전투값, -1 체력, -1 회피값)을 얻습니다.
+    </td><td>
+        공격받은 적은 <span>이번 라운드가 끝날 때 까지</span> (–1 전투값과 –1 회피값/-1 전투값, -1 체력, -1 회피값)을 얻습니다.
     </td></tr>
 </tbody></table>
 
@@ -716,30 +714,23 @@
     </td></tr>
 </tbody></table>
 
-<h4 id="mutated_09078">월광 의식 (2레벨) (<span title="진홍색 열쇠" class="symbol-tskp"></span> 93)</h4>
-<table><tbody>
-    <tr><th>기존 문구</th><th>변경 문구</th></tr>
-    <tr><td>
-        당신이 위치한 장소에 있는 <span><span class="trait">정예</span>가 아닌</span> 카드 1장에 있는 모든 파멸을 제거합니다.
-    </td><td>
-        당신이 위치한 장소에 있는 <span><span class="trait">정예</span>가 아니며 장소 그 자체도 아닌</span> 카드 1장에 있는 모든 파멸을 제거합니다.
+<h4 id="mutated_09045">연구 일지/Research Notes (<span title="진홍색 열쇠" class="symbol-tskp"></span> 45)</h4>
+<table><tbody class="c3">
+    <tr><th class="column3">기존 문구</th><th class="column3">금기6 문구</th><th class="column3">변경 문구</th></tr>
+    <tr><td class="column3">
+        <span title="행동 격발" class="icon-action"></span>: ...
+    </td><td class="column3">
+        <span title="행동 격발" class="icon-action"></span>: ... <span>(라운드당 증거는 최대 3개까지 소비 가능).</span>
+    </td><td class="column3">
+        <span title="행동 격발" class="icon-action"></span>: ... <span>(격발마다 증거는 최대 3개까지 소비 가능).</span>
     </td></tr>
 </tbody></table>
+</div>
 
-
+<div class="mutated_optional">
 <h2 id="investigator">조사자 카드</h2>
 
-<h3 id="Wendy_Adams">웬디 아담스</h3>
-<h4 id="Wendy_Adams_SignatureA">웬디의 부적 (강화된) (<span title="평행 조사자" class="symbol-par"></span> 39)</h4>
-<table><tbody>
-    <tr><th>기존 문구</th><th>변경 문구</th></tr>
-    <tr><td>
-    </td><td>
-        <span>금지.</span>
-    </td></tr>
-</tbody></table>
-
-<h3 id="Rex_Murphy" class="previous">렉스 머피</h3>
+<h3 id="Rex_Murphy" class="previous">렉스 머피 - 기능</h3>
 <h4 id="Rex_Murphy_Front" class="previous">조사자 카드: 앞면</h4>
 <table class="previous"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
@@ -750,19 +741,8 @@
     </td></tr>
 </tbody></table>
 
-<h3 id="Jim_Culver">짐 컬버</h3>
-<h4 id="Jim_Culver_Front">조사자 카드: 앞면</h4>
-<table><tbody>
-    <tr><th>기존 문구</th><th>변경 문구</th></tr>
-    <tr><td>
-        당신이 공개하는 <span title="해골" class="icon-skull"></span> 토큰의 <span>보정값을 “0”으로 취급합니다.</span>
-    </td><td>
-        <span>능력 테스트 동안</span> 당신이 공개하는 <span title="해골" class="icon-skull"></span> 토큰은 <span>“0” 토큰으로 취급해도 됩니다.</span>
-    </td></tr>
-</tbody></table>
-
-<h3 id="Lola_Hayes" class="previous">롤라 헤이즈</h3>
-<h4 id="Lola_Hayes_Front" class="previous">조사자 카드: 앞면</h4>
+<h3 id="Lola_Hayes" class="previous">롤라 헤이즈 - 기능 및 전용약점</h3>
+<h4 class="previous">조사자 카드: 앞면</h4>
 <table class="previous"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
     <tr><td>
@@ -772,7 +752,7 @@
     </td></tr>
 </tbody></table>
 
-<h4 id="Lola_Hayes_Weakness" class="previous">정체성의 위기 (<span title="카르코사로 가는 길" class="symbol-tpc"></span> 19)</h4>
+<h4 class="previous">정체성의 위기 (<span title="카르코사로 가는 길" class="symbol-tpc"></span> 19)</h4>
 <table class="previous"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
     <tr><td>
@@ -782,36 +762,8 @@
     </td></tr>
 </tbody></table>
 
-<h3 id="Finn_Edwards">핀 에드워즈</h3>
-<h4 id="Finn_Edwards_Weakness">현행범으로 붙잡히다 (<span title="잊힌 시대" class="symbol-tfa"></span> 12)</h4>
-<table><tbody>
-    <tr><th>기존 문구</th><th>변경 문구</th></tr>
-    <tr><td>
-        이 효과로 <span>이동한 적이</span> 하나도 없다면, ‘현행범으로 붙잡히다’를 당신의 덱에 합친 후 섞습니다.
-    </td><td>
-        이 효과로 <span>이동한 적도 준비된 적도</span> 하나도 없다면, ‘현행범으로 붙잡히다’를 당신의 덱에 합친 후 섞습니다.
-    </td></tr>
-</tbody></table>
-
-<h3 id="Mendy_Thompson">맨디 톰슨</h3>
-<h4 id="Mendy_Thompson_back">조사자 카드: 뒷면</h4>
-<table><tbody>
-    <tr><th>기존 문구</th><th>변경 문구</th></tr>
-    <tr><td>
-        <b>덱 크기</b>덱 크기: 덱 구성 시, <span>30장/40장/50장</span> 중에 선택.
-    </td><td>
-        <b>덱 크기</b>덱 크기: 덱 구성 시, <span>30장/35장/40장</span> 중에 선택.
-    </td></tr>
-    <tr><td>
-        <b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 초자연적인 증거 사본 1장(덱 크기가 <span>40장</span>이라면 그 대신 2장, <span>50장</span>이라면 그 대신 3장), 충격적인 발견, 무작위 기본 약점 카드 1장.
-    </td><td>
-        <b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 초자연적인 증거 사본 1장(덱 크기가 <span>35장</span>이라면 그 대신 2장, <span>40장</span>이라면 그 대신 3장), 충격적인 발견, 무작위 기본 약점 카드 1장.
-    </td></tr>
-</tbody></table>
-
-
-<h3 id="Amanda_Sharpe">어맨다 샤프</h3>
-<h4 id="Amanda_Sharpe_weakness">심해로부터의 속삭임 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 9)</h4>
+<h3 id="Amanda_Sharpe">어맨다 샤프 - 전용약점</h3>
+<h4>심해로부터의 속삭임 (<span title="인스머스에 드리운 음모" class="symbol-tic"></span> 9)</h4>
 <table><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
     <tr><td>
@@ -820,8 +772,8 @@
     </td></tr>
 </tbody></table>
 
-<h3 id="Trish_Scarborough" class="previous">트리시 스카보로</h3>
-<h4 id="Trish_Scarborough_Front" class="previous">조사자 카드: 앞면</h4>
+<h3 id="Trish_Scarborough" class="previous">트리시 스카보로 - 기능</h3>
+<h4 class="previous">조사자 카드: 앞면</h4>
 <table class="previous"><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
     <tr><td>
@@ -831,25 +783,54 @@
     </td></tr>
 </tbody></table>
 
-<h3 id="Kymani_Jones">카이마니 존스</h3>
-<h4 id="Kymani_Jones_back">조사자 카드: 뒷면</h4>
+</div>
+
+<div class="mutated_optional">
+<h2 id="investigator_optional">조사자 카드 (선택)</h2>
+<p>아래 변경은 선택해도 됩니다. 변경하지 않기로 한 경우, 기존 문구를 따르면 됩니다. 단, 기존 금기가 있는 경우에는 기존 금기의 변경된 문구를 따라야 합니다. 이 경우에는 본 페이지에 기존 금기 문구를 병행해 제시하고 있습니다.</p>
+
+<h3 id="Jim_Culver">짐 컬버 - 기능</h3>
+<h4>조사자 카드: 앞면</h4>
 <table><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
     <tr><td>
+        당신이 공개하는 <span title="해골" class="icon-skull"></span> 토큰의 <span>보정값을 “0”으로 취급합니다.</span>
     </td><td>
-        <span><b>덱 구성 제한:</b> 잠행(3레벨) (<span title="돌아온 카르코사로 가는 길" class="symbol-rtpc"></span> 5)은 사용할 수 없습니다.</span>
+        <span>능력 테스트 동안</span> 당신이 공개하는 <span title="해골" class="icon-skull"></span> 토큰은 <span>“0” 토큰으로 취급해도 됩니다.</span>
     </td></tr>
 </tbody></table>
 
-<h3 id="Gloria_GoldBerg">글로리아 골드버그</h3>
-<h4 id="Gloria_GoldBerg_front">조사자 카드: 앞면</h4>
+<h3 id="Finn_Edwards">핀 에드워즈 - 전용약점</h3>
+<h4>현행범으로 붙잡히다 (<span title="잊힌 시대" class="symbol-tfa"></span> 12)</h4>
 <table><tbody>
     <tr><th>기존 문구</th><th>변경 문구</th></tr>
     <tr><td>
+        이 효과로 <span>이동한 적이</span> 하나도 없다면, ‘현행범으로 붙잡히다’를 당신의 덱에 합친 후 섞습니다.
     </td><td>
-        <span>금지.</span>
+        이 효과로 <span>이동한 적도 준비된 적도</span> 하나도 없다면, ‘현행범으로 붙잡히다’를 당신의 덱에 합친 후 섞습니다.
     </td></tr>
 </tbody></table>
+
+<h3 id="Mendy_Thompson">맨디 톰슨 - 덱 구성 조건</h3>
+<h4 id="Mendy_Thompson_back">조사자 카드: 뒷면</h4>
+<table><tbody class="c3">
+    <tr><th>기존 문구</th><th>기존 금기 문구</th><th>변경 문구</th></tr>
+    <tr><td>
+        <b>덱 크기</b>: 덱 구성 시, <span>30장/40장/50장</span> 중에 선택.
+    </td><td>
+        <b>덱 크기</b>: <span>50장</span>.
+    </td><td>
+        <b>덱 크기</b>: 덱 구성 시, <span>30장/35장/40장</span> 중에 선택.
+    </td></tr>
+    <tr><td>
+        <b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 초자연적인 증거 사본 1장(덱 크기가 <span>40장</span>이라면 그 대신 2장, <span>50장</span>이라면 그 대신 3장), 충격적인 발견, 무작위 기본 약점 카드 1장.
+    </td><td>
+        <b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 초자연적인 증거 사본 <span>3장</span>, 충격적인 발견, 무작위 기본 약점 카드 1장.
+    </td><td>
+        <b>덱 구성 요구조건</b>(덱 크기에 포함되지 않습니다): 초자연적인 증거 사본 1장(덱 크기가 <span>35장</span>이라면 그 대신 2장, <span>40장</span>이라면 그 대신 3장), 충격적인 발견, 무작위 기본 약점 카드 1장.
+    </td></tr>
+</tbody></table>
+</div>
 
 <h2 id="weakness">기본 약점</h2>
 <p>무작위 기본 약점을 뽑는 과정에서, 아래 약점은 제외합니다.</p>
@@ -858,7 +839,6 @@
     <li>부채 (<span title="던위치의 유산" class="symbol-tdl"></span>)</li>
     <li>비운 (<span title="잊힌 시대" class="symbol-tfa"></span>)</li>
     <li>거부할 수 없는 제안 (<span title="돌아온 잊힌 시대" class="symbol-rtfa"></span>)</li>
-    <li>엑토플라스마를 토해내는 공포/Ectoplasmic Horror (<span title="진홍색 열쇠" class="symbol-tskp"></span>)</li>
     <li>준비 부족/Underprepared (<span title="진홍색 열쇠" class="symbol-tskp"></span>)</li>
 </ul>
 <p>무작위 기본 약점을 뽑는 경우 모든 약점에서 무작위 1장을 선정하는 것이 아니라 그 대신, 아래의 과정을 따릅니다. 여러장을 뽑는 경우, 1장을 뽑을 때 마다 아래 과정을 반복합니다.</p>

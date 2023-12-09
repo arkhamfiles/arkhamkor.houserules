@@ -139,11 +139,53 @@ p.cardEffectBox {
   font-size: 14px;
 }
 
+.errata th {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: bold;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  width: 45em;
+  font-size: 14px;
+}
+
+.errata tbody.c3 th {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: bold;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  width: 30em;
+  font-size: 14px;
+}
+
 .errata td {
   border-style: solid;
   border-color: black;
   border-width: 1px;
-  width: 500px;
+  width: 45em;
+  border-spacing: 5px;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  font-size: 12px;
+}
+.errata tbody.c3 td {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  width: 30em;
   border-spacing: 5px;
   padding-left: 0.3em;
   padding-right: 0.3em;

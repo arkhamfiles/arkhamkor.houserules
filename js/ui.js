@@ -1,16 +1,45 @@
 window.onload = function () {
   var viewAllTaboo = localStorage.getItem('viewAllTaboo') == 'true';
-  window.toggleViewAllTaboo.innerText = viewAllTaboo ? '전체 금기 보기' : '기존 금기 차이점만 보기';
+  window.toggleViewAllTaboo.innerText = viewAllTaboo ? '[공식금기] 포함(전부보기)' : '[공식금기] 제외(차이만)';
+  var viewOnlyForbidden = localStorage.getItem('viewOnlyForbidden') == 'true';
+  window.toggleviewOnlyForbidden.innerText = viewOnlyForbidden ? '[제안금기] 금지목록만' : '[제안금기] 전부보기';
 
   window.toggleViewAllTaboo.onclick = function() {
-    toggleViewSelector('.revised, .previous');
+    toggleViewSelector('.revised, .free, .previous');
     viewAllTaboo = !viewAllTaboo;
-      window.toggleViewAllTaboo.innerText = viewAllTaboo ? '전체 금기 보기' : '기존 금기 차이점만 보기';
+      window.toggleViewAllTaboo.innerText = viewAllTaboo ? '[공식금기] 포함(전부보기)' : '[공식금기] 제외(차이만)';
     localStorage.setItem('viewAllTaboo', viewAllTaboo);
   }
+  // TODO: onclick function for viewOnlyForbidden variable
+  window.toggleviewOnlyForbidden.onclick = function() {
+    viewOnlyForbidden = !viewOnlyForbidden;
+      window.toggleviewOnlyForbidden.innerText = viewOnlyForbidden ? '[제안금기] 금지목록만' : '[제안금기] 전부보기';
+    localStorage.setItem('toggleviewOnlyForbidden', toggleviewOnlyForbidden);
+  }
 
+  // TODO: toggleViewSelector for both view variables with...
+  if(!viewAllTaboo && !viewOnlyForbidden){
+    toggleViewSelector('.revised, .free');
+    // turn on: .revised, .free
+    // turn off: .legacy, .previous
+  }
+  else if(!viewAllTaboo && viewOnlyForbidden){
+    // turn on: .revised, .legacy
+    // turn off: .free, .mutated, .mutated_optional
+    ;
+  }
+  else if(viewAllTaboo && !viewOnlyForbidden){
+    // turn on: .free, .previous
+    // turn off: .legacy, .revised
+    ;
+  }
+  else{
+    // turn on: .legacy, .mutated, .mutated_optional
+    // turn off: .free, .revised
+    ;
+  }
   if (!viewAllTaboo) {
-    toggleViewSelector('.revised');
+    toggleViewSelector('.revised, .free');
   } else {
     toggleViewSelector('.previous');
   }
