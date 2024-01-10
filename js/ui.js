@@ -22,11 +22,11 @@ window.onload = function () {
     toggleViewSelector('.revised, .free');
   } else {
     toggleViewSelector('.previous');
+  window.toggleviewOnlyForbidden.click();
   }
   if (!viewAllTaboo) {
     toggleViewSelector('.mutated, .mutated_optional');
   }
-  window.toggleviewOnlyForbidden.click();
   //putCurrentItemClass(currentItemClass);
 }
 
