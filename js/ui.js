@@ -26,7 +26,7 @@ window.onload = function () {
   if (!viewAllTaboo) {
     toggleViewSelector('.mutated, .mutated_optional');
   }
-
+  window.toggleviewOnlyForbidden.click();
   //putCurrentItemClass(currentItemClass);
 }
 
