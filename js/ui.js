@@ -19,13 +19,13 @@ window.onload = function () {
   }
 
   if (viewOnlyForbidden) {
-    toggleViewSelector('.revised, .free');
+    toggleViewSelector('.mutated, .mutated_optional');
   } else {
     toggleViewSelector('.previous');
   window.toggleviewOnlyForbidden.click();
   }
   if (!viewAllTaboo) {
-    toggleViewSelector('.mutated, .mutated_optional');
+    toggleViewSelector('.revised, .free, .previous, .legacy');
   }
   //putCurrentItemClass(currentItemClass);
 }
