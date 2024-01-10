@@ -1,20 +1,20 @@
 window.onload = function () {
   var viewAllTaboo = localStorage.getItem('viewAllTaboo') == 'true';
-  window.toggleViewAllTaboo.innerText = viewAllTaboo ? '[공식금기] 포함(전부보기)' : '[공식금기] 제외(차이만)';
+  window.toggleViewAllTaboo.innerText = viewAllTaboo ? '[공식금기] 제외(차이만)' : '[공식금기] 포함(전부보기)';
   var viewOnlyForbidden = localStorage.getItem('viewOnlyForbidden') == 'true';
-  window.toggleviewOnlyForbidden.innerText = viewOnlyForbidden ? '[제안금기] 전부보기' : '[제안금기] 금지목록만';
+  window.toggleviewOnlyForbidden.innerText = viewOnlyForbidden ? '[제안금기] 금지목록만' : '[제안금기] 전부보기';
 
   window.toggleViewAllTaboo.onclick = function() {
     toggleViewSelector('.revised, .free, .previous, .legacy');
     viewAllTaboo = !viewAllTaboo;
-    window.toggleViewAllTaboo.innerText = viewAllTaboo ? '[공식금기] 포함(전부보기)' : '[공식금기] 제외(차이만)';
+    window.toggleViewAllTaboo.innerText = viewAllTaboo ? '[공식금기] 제외(차이만)' : '[공식금기] 포함(전부보기)';
     localStorage.setItem('viewAllTaboo', viewAllTaboo);
   }
   // TODO: onclick function for viewOnlyForbidden variable
   window.toggleviewOnlyForbidden.onclick = function() {
     toggleViewSelector('.mutated, .mutated_optional');
     viewOnlyForbidden = !viewOnlyForbidden;
-      window.toggleviewOnlyForbidden.innerText = viewOnlyForbidden ? '[제안금기] 전부보기' : '[제안금기] 금지목록만';
+      window.toggleviewOnlyForbidden.innerText = viewOnlyForbidden ? '[제안금기] 금지목록만' : '[제안금기] 전부보기';
     localStorage.setItem('viewOnlyForbidden', viewOnlyForbidden);
   }
 
